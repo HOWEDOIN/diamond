@@ -49,6 +49,21 @@ Each folder will initially work independently, with the goal of **eventual integ
 | Reasoning Simulation   | Recursive prompting + memory                  |
 | Optional APIs          | arXiv, Semantic Scholar (for scientific paper stubs) |
 
+## 🚀 Setup
+
+1. Install Python 3.10+.
+2. Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the app with Streamlit:
+
+```bash
+python main.py
+```
+
 ---
 
 ## 🔮 Future Development Plan
