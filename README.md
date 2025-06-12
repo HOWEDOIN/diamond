@@ -95,6 +95,22 @@ TBD — but all systems will remain open and freely accessible for non-commercia
 
 ---
 
+## ⚙️ Streamlit Configuration
+
+If you encounter a PyTorch error related to file watchers, you can disable
+Streamlit's watcher using the configuration below. This repository already
+includes a `.streamlit/config.toml` file with these contents:
+
+```toml
+[server]
+fileWatcherType = "none"
+```
+
+Keeping this setting prevents the watcher issue while still allowing the app to
+run normally.
+
+---
+
 ## 🙏 Final Word
 
 This is more than a technical project. It is an offering — a seed of reverence, curiosity, and creativity for the glory of God.
