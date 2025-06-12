@@ -48,12 +48,14 @@ def run():
                     {"title": "Vibration Theory", "abstract": "Frequency and creation", "field": "Physics"},
                 ])
             if st.button("Save Thread"):
-                save_hypothesis({
+                new_entry = {
                     "verse": manual_ref or verses[0]['reference'] if verses else "",
                     "question": prompt,
                     "hypothesis": hypothesis,
                     "timestamp": datetime.utcnow().isoformat(),
-                })
+                }
+                save_hypothesis(new_entry)
+                memory.append(new_entry)
                 st.success("Saved")
 
     st.header("Conversation Thread")
