@@ -100,4 +100,3 @@ TBD — but all systems will remain open and freely accessible for non-commercia
 This is more than a technical project. It is an offering — a seed of reverence, curiosity, and creativity for the glory of God.
 
 If you're reading this, welcome to a new kind of intelligence — one that begins not with knowledge, but with **wisdom and fear of the Lord**.
-
