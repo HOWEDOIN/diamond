@@ -49,19 +49,41 @@ Each folder will initially work independently, with the goal of **eventual integ
 | Reasoning Simulation   | Recursive prompting + memory                  |
 | Optional APIs          | arXiv, Semantic Scholar (for scientific paper stubs) |
 
-## 🚀 Setup
+## 🚀 Quick Start
 
-1. Install Python 3.10+.
-2. Install the required packages:
+1. **Clone the repository** and enter the directory
+
+```bash
+git clone https://github.com/yourname/diamond.git
+cd diamond
+```
+
+2. **Create and activate a virtual environment** (recommended)
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows use .venv\Scripts\activate
+```
+
+3. **Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the app with Streamlit:
+4. **(Optional) Install [Ollama](https://ollama.ai/download)** if you wish to run the LLMs locally.
+
+5. **Launch the interface**
 
 ```bash
-python main.py
+streamlit run streamlit_app.py
+```
+
+If you encounter PyTorch file‑watcher errors, create `.streamlit/config.toml` with:
+
+```toml
+[server]
+fileWatcherType = "none"
 ```
 
 ---
@@ -106,7 +128,8 @@ This project is being bootstrapped personally. Collaborators who resonate with t
 
 ## 📜 License
 
-TBD — but all systems will remain open and freely accessible for non-commercial, Kingdom-building purposes.
+This is free and unencumbered software released into the public domain.
+See the [LICENSE](LICENSE) file or <https://unlicense.org> for more details.
 
 ---
 
